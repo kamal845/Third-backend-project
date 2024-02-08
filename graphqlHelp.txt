@@ -1,0 +1,56 @@
+http://localhost:3000/graphql
+
+-----for getting allbooks:-here is the code.
+query{
+  books{
+    id,
+    title,
+    price
+  }
+}
+
+
+-----for getting addBook:-here is the code.
+mutation AddBook($addBookArgs: AddBookArgs!) {
+  addBook(addBookArgs: $addBookArgs)
+}
+IN QUERY VARIABLE:-
+{
+  "addBookArgs": {
+    "title": "pak",
+    "price": 10
+  }
+}
+
+
+-----for getting bookById:-here is the code.
+{
+  bookById(bookId: 3) {
+    title,
+    price
+  }
+}
+
+
+-----for getting deleteById:-here is the code.
+mutation deleteBook($bookId: Int!) {
+  deleteBook(bookId: $bookId)
+}
+IN QUERY VARIABLE:-
+{
+  "bookId":9
+}
+
+
+-----for getting updateById:-here is the code.
+mutation updateBook($updateBookArgs: updateBooksArgs!) {
+  updateBook(updateBookArgs: $updateBookArgs)
+}
+IN QUERY VARIABLE:-
+{
+  "updateBookArgs":{
+    "id":18,
+    "title":"Anne frank",
+    "price":50
+  }
+}

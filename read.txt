@@ -1,0 +1,19 @@
+1)entity ka use ham database mai data kis tarah jayega issliye banate hai.
+2)TypeOrm ka use ham database se connect ke liye krte hai.
+3)book.module.ts ye file ek app.js ki tarha hoti hai.jisme hamne graphQL,Postgre(TypeOrm) se apne project ko integrate kiya hai.
+4)book.service.ts iss file mai ham crud open likhenge. aur main file se connect karenge.
+5)args ye ek DTO(data transfer object) hai jo rest api ki tarah kaam karta hai.dynamic data retrive aur manipulation ke liye use hota hai
+6)book folder ke andar schema ki file issliye banayi gayi hai frontend par show ho.uska or entity ka data same hoga.
+jaise koi data like password hame browser par show nahi karna toh ham woh schema mai nahi likh sakte 
+hai entity databse ke liye hota hai issliye ham woh entity mai likh kar db mai save kar sakte hai,or schema jo hame show karana hai uske liye
+7)Book.module.ts mai ham sabhi banaye gaye function ko import karenge.
+8)main.ts mai port no 3000 ko listen kia hua hai.
+
+
+
+
+questions:-
+1. how to use multiple service files in a single controller file?
+2. how to use middle-ware in the graphQL?
+3. how to get customize data from graphQL suppose no data found then how to provide empty string?
+
